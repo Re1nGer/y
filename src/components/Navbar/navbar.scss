@@ -1,0 +1,217 @@
+.navbar {
+    &__container {
+        font-family: $font_family;
+
+        @media screen and (max-width: 1050px) {
+            padding: 2rem 4rem;
+        }
+
+        @media screen and (max-width: 550px) {
+            padding: 2rem;
+        }
+
+        padding: 75px 135px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 0 5 rgba(0,0,0,0.2);
+        width: 100%;
+    }
+
+    &__logo {
+        margin-right: 68px;
+        img {
+            width: 62.56px;
+            height: 16.02px
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex:1;
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffff;
+        background-image: linear-gradient(
+            to right,
+            #000,
+            #000 50%,
+            #fff 50%
+        );
+        background-size: 200% 100%;
+        margin-right: 30px;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+
+        &::before {
+            content: '';
+            background: #fff;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            background-position: 0;
+        }
+
+        &:hover::before{
+            width: 100%;
+        }
+    }
+
+    &__sign {
+
+        @media screen and (max-width: 550px) {
+            display: none;
+        }
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &-link {
+            margin-right: 26px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            position: relative;
+            color: #FFFFFF;
+            cursor: pointer;
+            background: transparent;
+            transition: all .2s linear;
+
+            &:hover {
+                background: #3A3A3A;
+                padding: 16px;
+            }
+
+            &:active {
+                top: 1px;
+            }
+
+        }
+
+        &-btn {
+            background: $color_sign_btn;
+            border-radius: 5px;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+            padding: 17px 16px;
+            position: relative;
+
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+            transition: background .2s linear;
+
+            &:hover {
+                background: #3A3A3A;
+            }
+
+            &:active {
+                top: 1px;
+            }
+        }
+    }
+
+    &__menu {
+
+        &-icon {
+            display: none;
+            position: relative;
+            @media screen and (max-width: 1200px) {
+                display: flex;
+            }
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            text-align: end;
+            background: $color-footer;
+            padding: 2rem;
+            position: absolute;
+            right: 0;
+            top: 40px;
+            margin-top: 1rem;
+            min-width: 210px;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+        }
+
+        &-sign {
+            display: none;
+
+            @media screen and (max-width: 550px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &_link {
+                margin-right: 26px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                position: relative;
+                color: #FFFFFF;
+                cursor: pointer;
+                background: transparent;
+                transition: all .2s linear;
+                margin: 5px 0;  
+
+                &:hover {
+                    background: #3A3A3A;
+                    padding: 16px;
+                }
+
+                &:active {
+                    top: 1px;
+                }
+            }
+
+            &_btn {
+                background: $color_sign_btn;
+                border-radius: 5px;
+                outline: none;
+                border: 0;
+                cursor: pointer;
+                padding: 8px;
+                position: relative;
+
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #FFFFFF;
+                transition: background .2s linear;
+            }
+        }
+
+        @media screen and (max-width: 1050px) {
+            display: block;
+        }
+    }
+}

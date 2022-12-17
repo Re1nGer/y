@@ -1,0 +1,109 @@
+.footer {
+    background: hsl(211, 89%, 11%);;
+    padding: 2rem 6rem;
+
+    @media screen and (max-width: 550px) {
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+
+    &__title {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 75px;
+        text-align: center;
+        margin-bottom: 64px;
+        padding: 0 4rem;
+        padding-top: 4rem;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        button {
+            font-size: 18px;
+            line-height: 21px;
+            color: #fff;
+            padding: 1rem;
+            border: 1px solid #FFFFFF;
+            background: #031B34;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+
+            transition: all .2s linear;
+
+            &:hover {
+                background: #d2d4cf;
+                color: #031B34;
+            }
+
+            &:active {
+                top: 2px;
+            }
+        }
+    }
+
+    &__columns {
+        margin: 4rem 6rem;
+        padding: 2rem 4rem;
+
+        @media screen and (max-width: 550px) {
+            margin: 0;
+            padding: 2rem .5rem;
+        }
+
+        @media screen and (max-width: 1050px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        display: flex;
+
+        &-trademark {
+            flex: 1;
+            p {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+                padding-right: 7rem;
+            }
+        }
+
+        &-links {
+            flex: 2;
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 550px) {
+                justify-content: center;
+            }
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        h1 {
+            font-size: 20px;
+            line-height: 16px;
+        }
+        color: #fff;
+        cursor: pointer;
+        margin: 0 2rem;
+        @media screen and (max-width: 550px) {
+            margin: 2rem 1rem;
+        }
+    }
+}

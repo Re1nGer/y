@@ -1,0 +1,35 @@
+.blogs {
+    margin: 4rem 6rem;
+    padding: 2rem 4rem;
+    height: 100%;
+
+    @media screen and (max-width: 550px) {
+        margin: 1rem 2rem;
+        padding: 1rem 2rem;
+    }
+
+    display: flex;
+
+    @media screen and (max-width: 1150px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;;
+    }
+
+    &__main {
+        flex: 1;
+        display: flex;
+        height: 100%;
+    }
+
+    &__secondary {
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        @media screen and (max-width: 1150px) {
+            justify-content: center;
+        }
+        justify-content: center;
+    }
+}

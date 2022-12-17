@@ -1,0 +1,28 @@
+.blog__header {
+    margin: 4rem 6rem;
+    padding: 2rem 4rem;
+    display: flex;
+
+    @media screen and (max-width: 550px) {
+        margin: 1rem 2rem;
+        padding: 1rem 2rem;
+    }
+
+    h1 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 75px;
+        flex: .5;
+
+        @media screen and (max-width: 1050px) {
+            font-size: 50px;
+        }
+
+        @media screen and (max-width: 550px) {
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+}
