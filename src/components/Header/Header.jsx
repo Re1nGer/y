@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageAi from '../../assets/head_ai.png';
+import ImageAi from '../../assets/head_ai.webp';
 import ImageGroups from '../../assets/groups.png';
 import "./header.scss";
 

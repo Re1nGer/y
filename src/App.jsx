@@ -1,14 +1,17 @@
+import { Suspense } from 'react';
 import './App.scss'
 import { Navbar } from './components'
 import Header from './components/Header/Header'
-import Brands from './components/Brands/Brands'
-import WhatIsGpt3 from './components/WhatIsGpt3/WhatIsGpt3'
-import PossibilityContainer from './components/Possibilities/PossibilityContainer'
-import VR from './components/VR/VR'
-import Register from './components/Register/Register'
-import Blogs from './components/Blogs/Blogs'
-import BlogHeader from './components/BlogHeader/BlogHeader'
-import Footer from './components/Footer/Footer'
+import React from 'react';
+
+const Brands = React.lazy(() => import('./components/Brands/Brands'));
+const WhatIsGpt3 = React.lazy(() => import('./components/WhatIsGpt3/WhatIsGpt3'));
+const PossibilityContainer = React.lazy(() => import('./components/Possibilities/PossibilityContainer'));
+const VR = React.lazy(() => import('./components/VR/VR'));
+const Register = React.lazy(() => import('./components/Register/Register'));
+const Blogs = React.lazy(() => import('./components/Blogs/Blogs')) 
+const BlogHeader = React.lazy(() => import('./components/BlogHeader/BlogHeader'));
+const Footer = React.lazy(() => import('./components/Footer/Footer')); 
 
 const App = () => {
   return (
@@ -17,14 +20,16 @@ const App = () => {
         <Navbar />
         <Header />
       </div>
-      <Brands />
-      <WhatIsGpt3 />
-      <PossibilityContainer />
-      <VR />
-      <Register />
-      <BlogHeader />
-      <Blogs />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Brands />
+        <WhatIsGpt3 />
+        <PossibilityContainer />
+        <VR />
+        <Register />
+        <BlogHeader />
+        <Blogs />
+        <Footer />
+      </Suspense>
     </div>
   )
 }

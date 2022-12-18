@@ -1,5 +1,5 @@
 import React from 'react';
-import VrImage from '../../assets/feature.png';
+import VrImage from '../../assets/feature.webp';
 import "./vr.scss";
 
 const VR = () => {
