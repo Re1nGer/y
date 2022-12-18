@@ -61,5 +61,18 @@
         border: 0;
         outline: none;
         padding: 1rem 2rem;
+
+        position: relative;
+        transition: all .2s linear;
+
+        cursor: pointer;
+
+        &:hover {
+            text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #81AFDD;
+        }
+
+        &:active {
+            top: 1px;
+        }
     }
 }

@@ -15,11 +15,11 @@ function Navbar() {
                 <img src={Logo} alt={'logo'} />
             </div>
             <div className="navbar__links">
-                <a className="navbar__link navbar__link--home" href="#">Home</a>
-                <a className="navbar__link navbar__link--gpt" href="#">What is GPT</a>
-                <a className="navbar__link navbar__link--ai" href="#">Open AI</a>
-                <a className="navbar__link navbar__link--studies" href="#">Case Studies</a>
-                <a className="navbar__link navbar__link--library" href="#">Library</a>
+                <a className="navbar__link navbar__link--home" href="#home">Home</a>
+                <a className="navbar__link navbar__link--gpt" href="#gpt">What is GPT</a>
+                <a className="navbar__link navbar__link--ai" href="#openAi">Open AI</a>
+                <a className="navbar__link navbar__link--studies" href="#vr">Case Studies</a>
+                <a className="navbar__link navbar__link--library" href="#caseStudies">Library</a>
             </div>
             <div className="navbar__sign">
                 <p className="navbar__sign-link">Sign In</p>
@@ -34,11 +34,11 @@ function Navbar() {
                 { toggleMenu && (
                 <div className="navbar__menu-container scale-up-center">
                     <div className="navbar__menu-container_links">
-                        <a className="navbar__link navbar__link--home" href="#">Home</a>
-                        <a className="navbar__link navbar__link--gpt" href="#">What is GPT</a>
-                        <a className="navbar__link navbar__link--ai" href="#">Open AI</a>
-                        <a className="navbar__link navbar__link--studies" href="#">Case Studies</a>
-                        <a className="navbar__link navbar__link--library" href="#">Library</a>
+                        <a className="navbar__link navbar__link--home" href="#home">Home</a>
+                        <a className="navbar__link navbar__link--gpt" href="#gpt">What is GPT</a>
+                        <a className="navbar__link navbar__link--ai" href="#openAi">Open AI</a>
+                        <a className="navbar__link navbar__link--studies" href="#vr">Case Studies</a>
+                        <a className="navbar__link navbar__link--library" href="#caseStudies">Library</a>
                     </div>
                     <div className="navbar__menu-sign">
                         <p className="navbar__menu-sign_link">Sign In</p>

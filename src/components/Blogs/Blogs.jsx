@@ -9,7 +9,7 @@ import Blog5 from '../../assets/blog5.png';
 const Blogs = () => {
     return (<>
 
-        <div className="blogs">
+        <div className="blogs" id="caseStudies">
             <div className="blogs__main">
                 <Blog img={Blog1} content={'GPT-3 and Open  AI is the future. Let us exlore how it is?'} />
             </div>

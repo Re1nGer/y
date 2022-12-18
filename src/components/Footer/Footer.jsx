@@ -23,7 +23,6 @@ const Footer = () => {
                         <a>Overons</a>
                         <a>Social Media</a>
                         <a>Counters</a>
-                        <a>Contact</a>
                     </div>
                     <div className='footer__column'>
                         <h1>Company</h1>

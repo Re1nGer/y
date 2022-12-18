@@ -36,6 +36,10 @@
             font-size: 16px;
             line-height: 30px;
             color: #FF8A71;
+
+            @media screen and (max-width: 550px) {
+                line-height: 40px;
+            }
         }
     }
 

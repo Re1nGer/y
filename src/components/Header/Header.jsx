@@ -16,7 +16,7 @@ const Header = () => {
                 </div>
                 <div className='header__body'>
                     <p className='header__body-text'>
-                        Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.
+                        The OpenAI API can be applied to virtually any task that involves understanding or generating natural language or code. Get to know latest updates by subscribing to newsletter.
                     </p>
                 </div>
                 <div className='header__input'>
@@ -30,7 +30,7 @@ const Header = () => {
             </div>
 
             <div className='header__img'>
-                <img src={ImageAi} alt='ai' />
+                <img loading='lazy' src={ImageAi} alt='ai' />
             </div>
         </div>
     </> );

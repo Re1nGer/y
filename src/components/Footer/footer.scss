@@ -19,6 +19,10 @@
         padding: 0 4rem;
         padding-top: 4rem;
 
+        @media screen and (max-width: 550px) {
+            font-size: 25px;
+        }
+
         h1 {
             display: flex;
             justify-content: center;
