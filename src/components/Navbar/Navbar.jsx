@@ -9,6 +9,8 @@ function Navbar() {
 
     const handleToggleMenu = () => setToggleMenu(!toggleMenu);
 
+    const someoneSpecial = "Feruza";
+
     return ( <>
         <div className="navbar__container">
             <div className="navbar__logo">
@@ -39,6 +41,7 @@ function Navbar() {
                         <a className="navbar__link navbar__link--ai" href="#openAi">Open AI</a>
                         <a className="navbar__link navbar__link--studies" href="#vr">Case Studies</a>
                         <a className="navbar__link navbar__link--library" href="#caseStudies">Library</a>
+                        <a className="navbar__link--feruza" href="#">{someoneSpecial}</a>
                     </div>
                     <div className="navbar__menu-sign">
                         <p className="navbar__menu-sign_link">Sign In</p>

@@ -52,8 +52,16 @@
         -webkit-text-fill-color: transparent;
         transition: all 0.3s ease-in-out;
 
+        &--feruza {
+            font-size: 50px;
+            padding: 25px 0;
+            font-family: 'Ferry Ardana Putra';
+            color: #fff;
+        }
+
         @media screen and (max-width: 550px) {
             margin: .5rem 0;
+            padding: 5px 10px;
         }
 
         &::before {
