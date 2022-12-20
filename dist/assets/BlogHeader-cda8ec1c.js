@@ -1,1 +1,0 @@
-import{j as e,F as a}from"./index-1a82d278.js";import"./vendor-6e0ce8bd.js";import"./react-icons-f9ca368e.js";const i=()=>e(a,{children:e("div",{className:"blog__header",children:e("h1",{className:"text-gradient",children:"A lot is happening, We are blogging about it."})})});export{i as default};
